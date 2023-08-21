@@ -93,6 +93,7 @@ button {
 
 .pricing__container {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     width: 90%;
 }
@@ -103,6 +104,7 @@ button {
     padding: 2rem;
     border-radius: 20px;
     flex: 1;
+    min-width: 400px;
     /* margin-left: 2rem; */
 }
 
@@ -224,4 +226,210 @@ button {
 .container {
     width: 90%;
     margin-inline: auto;
+}
+
+/* Media Queries */
+@media (max-width: 891px) {
+    /* Header Section */
+    .header__title {
+        font-size: 1.2rem;
+    }
+
+    .header__link {
+        font-size: 0.8rem;
+    }
+
+    .header__btn-container {
+        font-size: 0.8rem;
+    }
+    /* Hero Section */
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__description {
+        font-size: 1rem;
+        margin: 1.5rem auto;
+    }
+
+    /* Pricing */
+    .pricing__title {
+        font-size: 2rem;
+    }
+
+    .pricing__description {
+        font-size: 1rem;
+    }
+
+    .pricing__price {
+        font-size: 1.5rem;
+    }
+
+    /* Features */
+    .features__title {
+        font-size: 2rem;
+    }
+
+    .features__description {
+        font-size: 1.5rem;
+    }
+
+    /* Contact */
+    .contact__title {
+        font-size: 2rem;
+    }
+
+    .contact__description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 713px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .header__title {
+        flex: 0 1 auto;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__btn-container {
+        display: none;
+    }
+
+    .header__title {
+        margin: 0 auto;
+    }
+
+    /* Hero Section */
+
+    .hero {
+        margin-top: 5rem;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__description {
+        font-size: 0.9rem;
+        margin: 1rem auto;
+    }
+
+    .hero__button {
+        font-size: 0.9rem;
+    }
+
+    /* Pricing */
+    .pricing {
+        margin-top: 5rem;
+    }
+
+    .pricing__title {
+        font-size: 1.5rem;
+    }
+
+    .pricing__description {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+
+    .pricing__plan-description {
+        font-size: 0.9rem;
+    }
+
+    /* Features */
+
+    .features {
+        margin-top: 5rem;
+    }
+
+    .features__title {
+        font-size: 1.5rem;
+    }
+
+    .features__description {
+        font-size: 0.9rem;
+        margin: 0.5rem auto
+    }
+
+    .features__box-title {
+        font-size: 1rem;
+    }
+
+    .features__box-descrption {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Contact */
+    .contact {
+        margin-top: 5rem;
+    }
+
+    .contact__title {
+        font-size: 1.5rem;
+    }
+
+    .contact__description {
+        font-size: 0.9rem;
+        margin: 0.5rem auto
+    }
+
+    .contact__btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 495px) {
+    /* Hero Section */
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    /* Pricing Section */
+    .pricing__title {
+        font-size: 1.3rem;
+    }
+
+    .pricing__box {
+        min-height: 290px;
+    }
+
+    /* Feature */
+    .features__title {
+        font-size: 1.3rem;
+    }
+
+    /* Contact */
+    .contact__title {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 396px) {
+    /* Hero Section */
+    .hero__title {
+        font-size: 1.6rem;
+    }
+
+    /* Pricing Section */
+    .pricing__title {
+        font-size: 1.1rem;
+    }
+
+    /* Feature */
+    .features__title {
+        font-size: 1.1rem;
+    }
+
+    /* Contact */
+    .contact__title {
+        font-size: 1.1rem;
+    }
 }
